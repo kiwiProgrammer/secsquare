@@ -15,5 +15,6 @@ if($name) {
 		http_response_code(404);
 		die();
 	}
+	http_response_code(200);
 	echo "{ \"results\":".json_encode($result)."}";
 }
